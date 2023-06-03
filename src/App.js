@@ -5,6 +5,7 @@ import AleroFront from './media/alero_front.jpg';
 import AleroSide from './media/alero_side.jpg';
 import Caprice from './media/caprice.jpg';
 import Civic from './media/civic.jpg';
+import Footer from './components/Footer';
 import './style/index.css';
 const bannerBody = `This page is made using multiple different components.
                     Some of these are a Banner component, a Header component,
@@ -24,8 +25,7 @@ function App() {
         body={bannerBody}
       />
       <Gallery arr={images} />
-      <div className="container">
-      </div>
+      <Footer />
     </main>
   );
 }

@@ -2,11 +2,11 @@
 
 :root {
   --app-dark:          #070423                   ;
-  --app-header-color:  #DD5730                   ;
-  --app-light:         #F7F7F7                   ;
-  --app-footer-color:  #DEDBDB                   ;
+  --app-header-color:  #dd5730                   ;
+  --app-light:         #f7f7f7                   ;
+  --app-footer-color:  #b2b2b2                   ;
   --app-dark-text:     #303030                   ;
-  --app-blue:          #408DFF                   ;
+  --app-blue:          #408dff                   ;
   --app-blue-hover:    #397bde                   ;
 
   --app-header-height: 70px                        ;
@@ -121,6 +121,9 @@ button {
   border: 1px solid var(--app-blue);
   color: var(--app-blue);
 }
+.secondary:hover {
+  background-color: #ededed;
+}
 
 /* gallery */
 
@@ -128,9 +131,36 @@ button {
   justify-content: center;
   gap: 5%;
   margin-top: 80px;
+  margin-bottom: 80px;
 }
 .gallery img {
   width: 20%;
   border-radius: 5px;
   box-shadow: 1px 2px 4px 0px rgba(49, 49, 49, 0.541);
+}
+
+/* Footer */
+
+footer {
+  color: var(--app-dark-text);
+  background-color: var(--app-footer-color);
+  height: 140px;
+  box-shadow: -1px 0px 4px 0px #3d3d3d6f;
+}
+
+footer > div {
+  align-items: center;
+  height: 100%;
+}
+
+footer div div {
+  width: 33%;
+}
+
+.description {
+  text-align: center;
+}
+
+.copyright {
+  text-align: right;
 }
